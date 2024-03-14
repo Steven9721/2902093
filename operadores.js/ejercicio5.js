@@ -1,3 +1,4 @@
+//LADO DE UN CUADRADO, VALOR DEL AREA Y PERIMETRO
 let lado = 16
 let area = lado * lado;
 

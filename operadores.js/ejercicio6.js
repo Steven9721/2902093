@@ -1,4 +1,5 @@
 
+//AREA Y VOLUMEN DE UN CILINDRO
 let radioCilindro = 5;
 let alturaCilindro = 10;
 let areaBase = 3.14159 * (radioCilindro * radioCilindro);

@@ -1,3 +1,4 @@
+//RADIO DE UNA CIRCUNFERENCIA Y VALOR DE LA LONGITUD DEL AREA
 let ladoACirc = 8;
 let Longitud = ladoACirc*2;
 let area =  3.1415*ladoACirc**2;
