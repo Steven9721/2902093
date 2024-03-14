@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miscelanea ejercicios</title>
+</head>
+<body>
+
+  <h1>Operadores</h1>
+  <ul>
+    <li><a href="#" onclick="calcularAreaTriangulo()">1. Calcular Área de Triángulo</a></li>
+    <li><a href="#" onclick="calcularSumaDosNumeros()">2. Suma de Dos Números</a></li>
+    <li><a href="#" onclick="numalCuadrado()">3. Numero al cuadrado</a></li>
+    <li><a href="#" onclick="EuroADolar()">4. Euro a Dolar</a></li>
+    <li><a href="#" onclick="ValorAreaPerimetro()">5. Valor Area-Perimetro </a></li>
+    <li><a href="#" onclick="AreaVolumenCilindro()">6. Determinar area y volumen de un cilindro </a></li>
+    <li><a href="#" onclick="RadioCircValorLArea()">7. Longitud y area circunferencia </a></li>
+    <li><a href="#" onclick="PromedioTresNumeros()">8. El promedio de 3 numeros </a></li>
+    <!-- Puedes agregar más opciones de menú según sea necesario -->
+  </ul>
+
+  <script>
+    function calcularAreaTriangulo() {
+      // Solicitar los datos al usuario
+      let base = prompt("Ingresa la longitud de la base del triángulo:");
+      let altura = prompt("Ingresa la altura del triángulo:");
+
+      // Convertir los valores ingresados a números
+      base = parseFloat(base);
+      altura = parseFloat(altura);
+
+      // Calcular el área del triángulo
+      let area = base * altura / 2;
+
+      // Mostrar el resultado en la página
+      document.write("<p>El área del triángulo es: " + area + "</p>");
+    }
+
+    function calcularSumaDosNumeros() {
+      // Solicitar los números al usuario
+      let num1 = prompt("Ingresa el primer número:");
+      let num2 = prompt("Ingresa el segundo número:");
+
+      // Convertir los valores ingresados a números
+      num1 = parseFloat(num1);
+      num2 = parseFloat(num2);
+
+      // Calcular la suma de los dos números
+      let suma = num1 + num2;
+
+      // Mostrar el resultado en la consola
+      document.write("<p>La suma es: " + suma + "</p>");
+    }
+
+    function numalCuadrado () {
+      let num1 = prompt ("Ingrese el numero a elevarse:");
+      let quad = num1**2;
+      document.write("<p>El numero al cuadrado es:" + quad + "</p>");
+    }
+
+    function EuroADolar() {
+      let euro = prompt ("Ingrese la cantidad de euros");
+      let conversion = euro*1.09;
+      document.write("<p>El total de euros que convirtio son:" +conversion + "</p>");
+
+    }
+    function ValorAreaPerimetro (){
+
+    let lado = prompt("Digite cuanto mide el lado del cuadrado")
+    let area = lado * lado;
+    let perimetro = 4 * lado;
+    document.write("<p>El área del cuadrado es: " + area +"</p>");
+    document.write("<p>El perímetro del cuadrado es: " + perimetro + "</p>");
+    }
+
+    function AreaVolumenCilindro(){
+      
+
+    let radioCilindro = prompt("igite el radio del cilindro");
+    let alturaCilindro = prompt("Digite la altura del cilindro");
+    let areaBase = 3.14159 * (radioCilindro * radioCilindro);
+    let areaLateral = 2 * 3.14159 * radioCilindro * alturaCilindro;
+    let areaTotal = 2 * areaBase + areaLateral;
+    let volumenCilindro = 3.14159 * (radioCilindro * radioCilindro) * alturaCilindro;
+
+    document.write("<p> El Área del cilindro es:" +areaTotal + "</p>");
+    document.write("<p> ElVolumen del cilindro es:" +volumenCilindro + "</p>");
+    }
+
+    function RadioCircValorLArea(){
+      let ladoACirc =prompt("Digite el valor del lado de la circunferencia");
+      let Longitud = ladoACirc*2;
+      let area =  3.1415*ladoACirc**2;
+
+      document.write("<p>La longitud del circulo es: " + Longitud + "</p>");
+      document.write("<p>El area del circulo es: " + area + "</p>");
+    } 
+
+    function PromedioTresNumeros(){
+      let a = prompt ("Digite el primer numero");
+      let b = prompt ("Digite el segundo numero");
+      let c = prompt ("Digite el tercer numero");
+      a = parseFloat(a);
+      b = parseFloat(b);
+      c = parseFloat(c);
+      let d = a + b +c
+      let promedio = d/3;
+      document.write("<p>Total Suma: " + d + "</p>");
+      document.write("<p>El promedio total de los tres numeros es: " +promedio + "</p>");
+    }
+
+    
+
+    
+  </script>
+
+  <h1>Condicionales</h1>
+  <ul>
+    <li><a href="#" onclick="PositivoANegativo()">1. Saber si el numero es + o -</a></li>
+  </ul>
+  <script>
+    function PositivoANegativo(){
+       
+        number=prompt("Digite el numero");
+
+        if (number>0) {
+            document.write("<p>El numero es positivo" + "</p>");
+        } else {
+            document.write("<p>El numero es negativo" + "</p>");
+        }
+        }
+    function MayorOMenor(){
+        n1 = prompt("Digite el primer número");
+        n2 = prompt("Digite el segundo numero");
+
+  if (n1>n2) {
+        document.write( "El numero mayor es " +n1);
+        document.write("El numero menor es " +n2)
+  } else {
+        document.write( "<p>El numero mayor es " +n2 +"</p>" );
+        document.write("<p>El numero menor es " +n1 +"</p>");
+}
+    }
+
+  </script>
+</body>
+</html>
