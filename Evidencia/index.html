@@ -110,14 +110,16 @@
       document.write("<p>El promedio total de los tres numeros es: " +promedio + "</p>");
     }
 
-    
-
-    
+        
   </script>
 
   <h1>Condicionales</h1>
   <ul>
     <li><a href="#" onclick="PositivoANegativo()">1. Saber si el numero es + o -</a></li>
+    <li><a href="#" onclick="MayorOMenor()">2. Saber si es mayor o menor -</a></li>
+    <li><a href="#" onclick="MayorMenor3Enteros()">3. Que número es mayor entre 3 enteros -</a></li>
+    <li><a href="#" onclick="SumaOResta()">4. Suma o Resta Dependiendo del valor -</a></li>
+    <li><a href="#" onclick="CocienteEntreAYB()">5. Encontar cociente entre 2 numeros -</a></li>
   </ul>
   <script>
     function PositivoANegativo(){
@@ -130,18 +132,76 @@
             document.write("<p>El numero es negativo" + "</p>");
         }
         }
-    function MayorOMenor(){
+        function MayorOMenor(){
         n1 = prompt("Digite el primer número");
         n2 = prompt("Digite el segundo numero");
 
+       let num1 = parseFloat(n1);
+       let num2 = parseFloat(n2);
+
   if (n1>n2) {
-        document.write( "El numero mayor es " +n1);
-        document.write("El numero menor es " +n2)
+        document.write( "<p>El numero mayor es " +n1 + "</p>");
+        document.write("<p>El numero menor es " +n2 + "</p>")
   } else {
         document.write( "<p>El numero mayor es " +n2 +"</p>" );
         document.write("<p>El numero menor es " +n1 +"</p>");
 }
     }
+      function MayorMenor3Enteros(){
+      let num1 = parseFloat(prompt("Inserte el primer número"));
+      let num2 = parseFloat(prompt("Inserte el segundo número"));
+      let num3 = parseFloat(prompt("Inserte el tercer número"));
+
+      let mayor = num1;
+      let menor = num1;
+
+      if (num2 > mayor) {
+          mayor = num2;
+      } else if (num2 < menor) {
+          menor = num2;
+      }
+
+
+      if (num3 > mayor) {
+          mayor = num3;
+      } else if (num3 < menor) {
+          menor = num3;
+      }
+
+      document.write("<p>El mayor número es: " + mayor + "</p>");
+      document.write("<p>El menor número es: " + menor + "</p>");
+
+      }
+
+      
+    function SumaOResta(){
+      let a = parseFloat(prompt("Digite El Primer Número"));
+      let b = parseFloat(prompt("Digite el segundo número"));
+      let resultado;
+    
+
+      if (a > b) {
+          resultado = a + b;
+          document.write("<p>a es mayor que b, la suma es: " + resultado + "</p>");
+      } else {
+          resultado = a - b;
+          document.write("<p>a es menor o igual que b, la resta es: " + resultado + "</p>");
+      }
+    }
+    function CocienteEntreAYB(){
+
+      let a =parseFloat(prompt("Digite un número"));
+      let b =parseFloat(prompt("Digite otro número"));
+      let cociente;
+
+      if (b !==0) {
+          cociente = a / b;
+          document.write("<p>El cociente entre a y b es: " + cociente + "</p>");
+
+      } else {
+          document.write("<p>No se puede dividir por cero, digite otro numero :" + "</p>");
+      }
+          }
 
   </script>
 </body>
