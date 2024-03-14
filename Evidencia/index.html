@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,39 +17,36 @@
     <li><a href="#" onclick="AreaVolumenCilindro()">6. Determinar area y volumen de un cilindro </a></li>
     <li><a href="#" onclick="RadioCircValorLArea()">7. Longitud y area circunferencia </a></li>
     <li><a href="#" onclick="PromedioTresNumeros()">8. El promedio de 3 numeros </a></li>
-    <!-- Puedes agregar más opciones de menú según sea necesario -->
+
   </ul>
 
   <script>
     function calcularAreaTriangulo() {
-      // Solicitar los datos al usuario
+      
       let base = prompt("Ingresa la longitud de la base del triángulo:");
       let altura = prompt("Ingresa la altura del triángulo:");
-
-      // Convertir los valores ingresados a números
       base = parseFloat(base);
       altura = parseFloat(altura);
 
-      // Calcular el área del triángulo
       let area = base * altura / 2;
 
-      // Mostrar el resultado en la página
+  
       document.write("<p>El área del triángulo es: " + area + "</p>");
     }
 
     function calcularSumaDosNumeros() {
-      // Solicitar los números al usuario
+  
       let num1 = prompt("Ingresa el primer número:");
       let num2 = prompt("Ingresa el segundo número:");
 
-      // Convertir los valores ingresados a números
+   
       num1 = parseFloat(num1);
       num2 = parseFloat(num2);
 
-      // Calcular la suma de los dos números
+   
       let suma = num1 + num2;
 
-      // Mostrar el resultado en la consola
+     
       document.write("<p>La suma es: " + suma + "</p>");
     }
 
@@ -67,25 +64,25 @@
     }
     function ValorAreaPerimetro (){
 
-    let lado = prompt("Digite cuanto mide el lado del cuadrado")
-    let area = lado * lado;
-    let perimetro = 4 * lado;
-    document.write("<p>El área del cuadrado es: " + area +"</p>");
-    document.write("<p>El perímetro del cuadrado es: " + perimetro + "</p>");
+      let lado = prompt("Digite cuanto mide el lado del cuadrado")
+      let area = lado * lado;
+      let perimetro = 4 * lado;
+      document.write("<p>El área del cuadrado es: " + area +"</p>");
+      document.write("<p>El perímetro del cuadrado es: " + perimetro + "</p>");
     }
 
     function AreaVolumenCilindro(){
       
 
-    let radioCilindro = prompt("igite el radio del cilindro");
-    let alturaCilindro = prompt("Digite la altura del cilindro");
-    let areaBase = 3.14159 * (radioCilindro * radioCilindro);
-    let areaLateral = 2 * 3.14159 * radioCilindro * alturaCilindro;
-    let areaTotal = 2 * areaBase + areaLateral;
-    let volumenCilindro = 3.14159 * (radioCilindro * radioCilindro) * alturaCilindro;
+      let radioCilindro = prompt("igite el radio del cilindro");
+      let alturaCilindro = prompt("Digite la altura del cilindro");
+      let areaBase = 3.14159 * (radioCilindro * radioCilindro);
+      let areaLateral = 2 * 3.14159 * radioCilindro * alturaCilindro;
+      let areaTotal = 2 * areaBase + areaLateral;
+      let volumenCilindro = 3.14159 * (radioCilindro * radioCilindro) * alturaCilindro;
 
-    document.write("<p> El Área del cilindro es:" +areaTotal + "</p>");
-    document.write("<p> ElVolumen del cilindro es:" +volumenCilindro + "</p>");
+      document.write("<p> El Área del cilindro es:" +areaTotal + "</p>");
+      document.write("<p> ElVolumen del cilindro es:" +volumenCilindro + "</p>");
     }
 
     function RadioCircValorLArea(){
@@ -120,61 +117,63 @@
     <li><a href="#" onclick="MayorMenor3Enteros()">3. Que número es mayor entre 3 enteros -</a></li>
     <li><a href="#" onclick="SumaOResta()">4. Suma o Resta Dependiendo del valor -</a></li>
     <li><a href="#" onclick="CocienteEntreAYB()">5. Encontar cociente entre 2 numeros -</a></li>
+    <li><a href="#" onclick="SumaMul()">6. Si uno es negativo, sumar, lo contrario multiplicar -</a></li>
+    <li><a href="#" onclick="CalcularBisiesto()">7. ¿El año es bisiesto? -</a></li>
   </ul>
   <script>
     function PositivoANegativo(){
        
-        number=prompt("Digite el numero");
+      number=prompt("Digite el numero");  
 
-        if (number>0) {
-            document.write("<p>El numero es positivo" + "</p>");
-        } else {
-            document.write("<p>El numero es negativo" + "</p>");
-        }
-        }
-        function MayorOMenor(){
-        n1 = prompt("Digite el primer número");
-        n2 = prompt("Digite el segundo numero");
+      if (number>0) {
+              document.write("<p>El numero es positivo" + "</p>");
+          } else {
+              document.write("<p>El numero es negativo" + "</p>");
+          }
+          }
+     function MayorOMenor(){
+       n1 = prompt("Digite el primer número");
+       n2 = prompt("Digite el segundo numero");
 
        let num1 = parseFloat(n1);
        let num2 = parseFloat(n2);
 
-  if (n1>n2) {
+        if (n1>n2) {
         document.write( "<p>El numero mayor es " +n1 + "</p>");
         document.write("<p>El numero menor es " +n2 + "</p>")
-  } else {
+        } else {
         document.write( "<p>El numero mayor es " +n2 +"</p>" );
         document.write("<p>El numero menor es " +n1 +"</p>");
-}
-    }
+        }
+       }
       function MayorMenor3Enteros(){
-      let num1 = parseFloat(prompt("Inserte el primer número"));
-      let num2 = parseFloat(prompt("Inserte el segundo número"));
-      let num3 = parseFloat(prompt("Inserte el tercer número"));
+        let num1 = parseFloat(prompt("Inserte el primer número"));
+        let num2 = parseFloat(prompt("Inserte el segundo número"));
+        let num3 = parseFloat(prompt("Inserte el tercer número"));
 
-      let mayor = num1;
-      let menor = num1;
+        let mayor = num1;
+        let menor = num1;
 
-      if (num2 > mayor) {
-          mayor = num2;
-      } else if (num2 < menor) {
-          menor = num2;
-      }
+        if (num2 > mayor) {
+            mayor = num2;
+        } else if (num2 < menor) {
+            menor = num2;
+        }
 
 
-      if (num3 > mayor) {
-          mayor = num3;
-      } else if (num3 < menor) {
-          menor = num3;
-      }
+        if (num3 > mayor) {
+            mayor = num3;
+        } else if (num3 < menor) {
+            menor = num3;
+        }
 
-      document.write("<p>El mayor número es: " + mayor + "</p>");
-      document.write("<p>El menor número es: " + menor + "</p>");
+        document.write("<p>El mayor número es: " + mayor + "</p>");
+        document.write("<p>El menor número es: " + menor + "</p>");
 
-      }
+        }
 
       
-    function SumaOResta(){
+     function SumaOResta(){
       let a = parseFloat(prompt("Digite El Primer Número"));
       let b = parseFloat(prompt("Digite el segundo número"));
       let resultado;
@@ -188,7 +187,7 @@
           document.write("<p>a es menor o igual que b, la resta es: " + resultado + "</p>");
       }
     }
-    function CocienteEntreAYB(){
+     function CocienteEntreAYB(){
 
       let a =parseFloat(prompt("Digite un número"));
       let b =parseFloat(prompt("Digite otro número"));
@@ -202,7 +201,117 @@
           document.write("<p>No se puede dividir por cero, digite otro numero :" + "</p>");
       }
           }
+    function SumaMul() {
+    let num1 = parseFloat(prompt("Digite un número"));
+    let num2 = parseFloat(prompt("Digite otro número"));
 
+    let resultado;
+
+    if (num1 < 0 || num2 < 0) {
+        resultado = num1 + num2;
+        document.write("<p>Se sumó, y el total es: " + resultado + "</p>");
+    } else if (num1 > 0 && num2 > 0) { 
+        resultado = num1 * num2; 
+        document.write("<p>Se multiplicó, el resultado es: " + resultado + "</p>");
+    } else {
+        document.write("<p>Los números ingresados no cumplen las condiciones.</p>");
+    }
+}
+
+    function CalcularBisiesto(){
+    let año =parseFloat(prompt("Digite el año"));
+    let esBisiesto = (año % 4 === 0 && año % 100 !== 0) || año % 400 === 0;
+
+    document.write(esBisiesto ? `${año} es un año bisiesto.` : `${año} no es un año bisiesto.`);
+    }
   </script>
+
+  <h1>Ciclos</h1>
+  <ul>
+    <li><a href="#" onclick="Multiplos1Y100()">1. Multiplos Entre 1 y 100</a></li>
+    <li><a href="#" onclick="Impares0Y100()">2. Impares entre 0 y 100</a></li>
+    <li><a href="#" onclick="Pares1Y100()">3. Pares entre 1 y 100</a></li>
+    <li><a href="#" onclick="Cuadrados1Y100()">4. Cuadrados entre 1 y 100</a></li>
+    <li><a href="#" onclick="Suma100NatuQuad()">5. Suma de los cuadrados de los 100 primeros numeros naturales</a></li>
+    <li><a href="#" onclick="SecAscendente()">6. Secuencia Ascendente</a></li>
+    <li><a href="#" onclick="SumaSin0()">7. Sumar todo menos el 0</a></li>
+  </ul>
+  <script>
+    function Multiplos1Y100 (){
+      for (let i = 1; i <= 100; i++) {
+    if (i % 3 === 0) {
+        document.write(i + "<br>");
+    }
+    }   
+
+    }
+    function Impares0Y100 (){
+    for (let i = 1; i <= 100; i += 2) {
+    document.write(i + "<br>");
+    }
+
+    }
+    function Pares1Y100 (){
+    for (let i = 2; i <= 100; i += 2) {
+    document.write(i + "<br>");
+}
+
+    }
+    function Cuadrados1Y100 (){
+    for (let i = 1; i <= 30; i++) {
+    let cuadrado = i * i;
+    document.write(cuadrado+ "<br>");
+}
+    }
+    function Suma100NatuQuad (){
+    let sumaCuadrados = 0;
+
+    for (let i = 1; i <= 100; i++) {
+        sumaCuadrados += i * i;
+    }
+
+    document.write("<p>La suma de los cuadrados de los cien primeros  cuadrados números naturales es: " + sumaCuadrados + "</p>");
+    }
+   
+    function SecAscendente() {
+    let primero = parseInt(prompt("Ingrese el primer número:"));
+    let segundo = parseInt(prompt("Ingrese el segundo número:"));
+    if (primero >= segundo) {
+        document.write("p>El primer número debe ser menor que el segundo número." + "</p>");
+        return;
+    }
+
+        document.write("<p>Números comprendidos entre " + primero + " y " + segundo + ":" + "</p>" );
+
+    for (let i = primero; i <= segundo; i++) {
+        document.write(i + "<br>");
+    }
+}
+    function SumaSin0 (){
+      let numeros = [];
+      let suma = 0;
+      let numero = parseFloat(prompt("Ingrese un número (ingrese 0 para terminar):"));
+
+      while (numero !== 0) {
+          numeros.push(numero);
+          numero = parseFloat(prompt("Ingrese otro número (ingrese 0 para terminar):"));
+      }
+
+      for (let i = 0; i < numeros.length; i++) {
+          suma += numeros[i];
+      }
+
+      document.write("La suma de los números ingresados es: " + suma);
+
+          }
+
+    
+
+
+
+
+
+
+  </script> 
 </body>
-</html>
+</html
