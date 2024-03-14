@@ -1,3 +1,4 @@
+//SUMA DE LOS PRIMEROS 100 NUMEROS NATURALES
 let sumaCuadrados = 0;
 
 for (let i = 1; i <= 100; i++) {
