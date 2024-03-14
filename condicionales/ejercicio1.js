@@ -1,3 +1,4 @@
+//NUMERO POSITIVO O NEGATIVO
 number= 5;
 
 if (number<0) {

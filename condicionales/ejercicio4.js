@@ -1,3 +1,4 @@
+//SI A ES MAYOR, SUMAR, PERO SI B ES MAYOR RESTAR
 let a = 28;
 let b = 15;
 let resultado;

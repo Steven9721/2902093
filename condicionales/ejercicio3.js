@@ -1,3 +1,4 @@
+//MAYOR Y MENOR ENTRE 3 ENTEROS POSITIVOS
 let num1 = 8;
 let num2 = 15;
 let num3 = 25;

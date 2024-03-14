@@ -1,3 +1,4 @@
+//CALCULAR SI EL AÑO ES BISIESTO O NO.
 let año = 2023;
 let esBisiesto = (año % 4 === 0 && año % 100 !== 0) || año % 400 === 0;
 

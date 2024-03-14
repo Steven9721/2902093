@@ -1,3 +1,4 @@
+//CUAL ES MAYOR O MENOR
 n1 = 5;
 n2 = 6;
 
